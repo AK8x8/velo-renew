@@ -13,7 +13,13 @@
             --dark: #1A1A1A;
         }
 
-        body { font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; margin: 0; color: var(--dark); background-color: white; }
+        body { 
+            font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; 
+            margin: 0; 
+            color: var(--dark); 
+            background-color: white; 
+            line-height: 1.6;
+        }
 
         /* HEADER */
         header {
@@ -30,8 +36,16 @@
 
         .logo img { height: 50px; }
 
-        nav ul { list-style: none; display: flex; gap: 30px; margin: 0; }
-        nav a { text-decoration: none; color: var(--primary); font-weight: bold; font-size: 0.9rem; text-transform: uppercase; letter-spacing: 1px; }
+        nav ul { list-style: none; display: flex; gap: 30px; margin: 0; padding: 0; }
+        nav a { 
+            text-decoration: none; 
+            color: var(--primary); 
+            font-weight: bold; 
+            font-size: 0.9rem; 
+            text-transform: uppercase; 
+            letter-spacing: 1px; 
+            transition: color 0.3s;
+        }
         nav a:hover { color: var(--secondary); }
 
         /* HERO SECTION */
@@ -50,34 +64,50 @@
             padding: 0 20px;
         }
 
-        .hero h1 { font-size: 3.5rem; margin-bottom: 10px; text-shadow: 2px 2px 10px rgba(0,0,0,0.5); }
+        .hero h1 { font-size: 3.5rem; margin-bottom: 10px; text-shadow: 2px 2px 10px rgba(0,0,0,0.5); font-weight: 800; }
         .hero p { font-size: 1.4rem; max-width: 700px; margin-bottom: 30px; }
+        
         .cta-button { 
-            background: var(--secondary); color: white; padding: 15px 40px; 
-            text-decoration: none; border-radius: 30px; font-weight: bold; 
+            background: var(--secondary); 
+            color: white; 
+            padding: 15px 40px; 
+            text-decoration: none; 
+            border-radius: 30px; 
+            font-weight: bold; 
             transition: transform 0.3s;
+            display: inline-block;
         }
         .cta-button:hover { transform: scale(1.05); }
 
         /* COLLECTIONS */
         .section { padding: 80px 10%; text-align: center; }
-        .section h2 { font-size: 2.5rem; color: var(--primary); margin-bottom: 50px; }
+        .section h2 { font-size: 2.5rem; color: var(--primary); margin-bottom: 50px; font-weight: 800; }
         
         .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 30px; }
         
         .card { 
-            background: var(--light); border-radius: 15px; overflow: hidden; 
-            transition: 0.3s; cursor: pointer; border: 1px solid #eee;
+            background: var(--light); 
+            border-radius: 15px; 
+            overflow: hidden; 
+            transition: 0.3s; 
+            cursor: pointer; 
+            border: 1px solid #eee;
+            text-align: left;
         }
         .card:hover { transform: translateY(-10px); box-shadow: 0 10px 20px rgba(0,0,0,0.1); }
         .card img { width: 100%; height: 250px; object-fit: cover; }
         .card-info { padding: 25px; }
-        .card-info h3 { margin: 0 0 10px 0; color: var(--primary); }
-        .card-info p { color: #666; font-size: 0.95rem; line-height: 1.4; }
+        .card-info h3 { margin: 0 0 10px 0; color: var(--primary); font-size: 1.4rem; }
+        .card-info p { color: #666; font-size: 0.95rem; margin: 0; }
 
         /* FOOTER */
-        footer { background: var(--primary); color: white; padding: 40px 10%; text-align: center; }
-        
+        footer { 
+            background: var(--primary); 
+            color: white; 
+            padding: 40px 10%; 
+            text-align: center; 
+            margin-top: 50px;
+        }
     </style>
 </head>
 <body>
@@ -120,10 +150,10 @@
                 </div>
             </div>
             <div class="card">
-                <img src="https://images.unsplash.com/photo-1532298229144-0ee0c9e9ad58?auto=format&fit=crop&q=80&w=800" alt="Gravel">
+                <img src="https://images.unsplash.com/photo-1485965120184-e220f721d03e?auto=format&fit=crop&q=80&w=800" alt="Gravel">
                 <div class="card-info">
                     <h3>Gravel & Aventure</h3>
-                    <p>Le mix parfait entre la route et les sentiers sauvages.</p>
+                    <p>Le mix parfait entre la route et les sentiers sauvages pour explorer sans limite.</p>
                 </div>
             </div>
         </div>
@@ -132,56 +162,6 @@
     <footer>
         <p>&copy; 2026 Vélo Renew - Propulsé par la technologie de routage intelligent 8x8</p>
     </footer>
-    <!-- Place this code snippet anywhere you want the button to appear in your page. If no button has been configured in the chat script, it will not show up nor take any space. -->
-    <div id="__8x8-chat-button-container-script_181613884969383c1838c756.76197268"></div>
 
-    <!-- This script will not interfere with the button layout, you just need to include it in the same page. It must also be within the <body> section of the page, preferably just before the ending tag. -->
-    <script type="text/javascript">
-    (function(c, f, ef){
-        var typeofC = Object.prototype.toString.call(c);
-        var props = (typeofC === '[object Object]' && c) || {};
-        var cb = f || (typeofC === '[object Function]' && c);
-        var config = {
-            scriptUuid: "script_181613884969383c1838c756.76197268",
-            tenant: "YW1pbmVrZXRhdGFzZXRyaWEwMQ",
-            channelName: "Ch_Chat_In",
-            channelUuid: "ZFsrxF-kRRWm9h6WGNyeUA",
-            domain: "https://vcc-eu12.8x8.com",
-            buttonContainerId: "__8x8-chat-button-container-script_181613884969383c1838c756.76197268",
-            align: "right",
-        };
-
-        var url = new URL("https://cloud8-cc-geo.8x8.com/vcc-chat-channels/public/webchat/discovery");
-        var params = { domain: config.domain, tenant: config.tenant, channelUuid: config.channelUuid };
-        url.search = new URLSearchParams(params).toString();
-        fetch(url)
-            .then(response => response.json())
-            .then(data => config.domain = !data.domain ? config.domain : data.domain)
-            .catch(error => console.warn('Failed to retrieve override domain, will continue using ', config.domain, error))
-            .finally(() => loadChat());
-
-        function loadChat() {
-            var se = document.createElement("script");
-            se.type = "text/javascript";
-            se.async = true;
-            se.src = props.loaderURL || (config.domain + "/CHAT/common/js/chatv3.js");
-            Object.keys(config).forEach(function (k) { se.dataset[k] = config[k] });
-            Object.keys(props).forEach(function (k) { se.dataset[k] = props[k] });
-            function handleInitEvent(e) {
-                var initFn = e.detail.init;
-                initFn(config, cb);
-                se.removeEventListener('init', handleInitEvent)
-            }
-            function handleErrorEvent(e) {
-                ef && ef(e);
-                se.removeEventListener('customerror', handleErrorEvent);
-            }
-            se.addEventListener('init', handleInitEvent);
-            se.addEventListener('customerror', handleErrorEvent);
-            var os = document.getElementsByTagName("script")[0];
-            os.parentNode.insertBefore(se, os);
-        }
-    })();
-    </script>
     </body>
 </html>
